@@ -1,0 +1,132 @@
+
+
+nav {
+    display: flex;
+        
+    
+    ul {
+        flex-direction: row;
+        display: flex;
+        flex: 0 0 100%;
+        min-height: 3rem;
+        padding-left: 0;
+        
+
+        li {
+            padding-top: 1rem;
+            background-color: black;
+            flex: 0 0 50%;
+            list-style: none;
+            text-align: center;
+            padding-bottom: 1rem;
+
+            a {
+                font-size: 3rem;
+                color: #fff;
+                width: auto;
+                text-decoration: none;
+                
+            }
+            a:hover {
+                border-bottom: 2px solid #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
+.header {
+    max-width: 150rem;
+    display: flex;
+    flex: 0 0 100%;
+    min-height: 95vh;
+    flex-direction: column;
+    
+
+
+    &__background--contianer {
+        display: flex;
+        overflow: hidden;
+        min-height: 50vh;
+        width: 100%;
+
+        background-image: url(./img/cover-image-for-kayak.png);
+        background-size: cover;
+        background-position: center;
+
+
+    }
+    &__head {
+        img {
+            position: absolute;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+        }
+        
+    }
+
+    &__text {
+        
+
+        display: flex;
+        padding-top: 1vh;
+        background-color: var(--color-grey-dark-1);
+        min-height: 45vh;
+        width: 100%;
+        display: inline-block;
+
+        h1 {
+            margin-left: 50%;
+            font-size: 4rem;
+            color: var(--color-grey-light-1);
+        }
+        h2 {
+            margin-left: 50%;
+            font-size: 3.5rem;
+            color: var(--color-grey-light-1);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+    .header {
+
+        &__text {
+            h1 { margin-left: 60%;}
+            h2 { margin-left: 60%;}
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    .header {
+        
+        &__head {
+            img {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -90%);
+                z-index: 100;
+            }    
+        }
+        &__text {
+            h1 { 
+                padding-top: 5rem;
+                display: flex;
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+            }
+            h2 {
+                display: flex;
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

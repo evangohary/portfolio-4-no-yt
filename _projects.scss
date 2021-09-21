@@ -1,0 +1,99 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 5rem;
+    background-color: var(--color-grey-light-3);
+    padding: 4%;
+    border-left: 4px solid #333;
+    border-right: 4px solid #333;
+
+
+    &__header {
+
+        color: var(--color-grey-dark-1);
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+
+    &__one {
+
+        position: relative;
+        width: 80%;
+        display: flex;
+
+        // background: linear-gradient(105deg,
+        // rgba(#333, .9) 0%,
+        // rgba(#333, .99) 50%,
+        // transparent 50%), 
+        // url(./img/dotspeacefulspotssc.PNG);
+
+        background: linear-gradient(-45deg,#271d21, #596168, #000000);
+	    background-size: 200% 200%;
+	    animation: gradient 10s ease infinite;
+
+        min-height: 60vh;
+        transition: all .4s;
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        
+
+        &--text {
+            color: var(--color-grey-light-1);
+            
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            
+
+            h4 {
+                font-size: 4rem;
+                margin: 4rem;
+            }
+            p {
+                margin: 0 4rem;
+                font-size: 2.5rem;
+            }
+        }
+
+        &--img {
+
+            img {
+            width: 60rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+
+        }
+        :hover {
+            transform:  translate(-50%, -30%) scale(1.05);
+        }
+        }
+        
+
+        &--2 {
+            margin-top: 10rem;
+            margin-left: auto;
+        }
+
+        
+    }
+
+
+}

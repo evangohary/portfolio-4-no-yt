@@ -1,0 +1,41 @@
+
+
+.footer {
+    margin-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    font-size: 2rem;
+    background-color: var(--color-grey-dark-1);
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__container {
+        flex-direction: row;
+        display: flex;
+        flex: 0 0 100%;
+        
+        
+        &--git {
+            font-size: 5rem;
+            flex: 0 0 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        &--link {
+            font-size: 5rem;
+            flex: 0 0 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        
+    }
+
+}
